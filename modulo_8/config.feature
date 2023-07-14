@@ -24,3 +24,4 @@
 			| "Orange" | "S"     | "9"        | "habilitar"   |
 			| "Red"    | "M"     | "10"       | "habilitar"   |
 			| "Blue"   | "L"     | "11"       | "desabilitar" |
+			| "Blue"   | "XL"    | "15"       | "desabilitar" |

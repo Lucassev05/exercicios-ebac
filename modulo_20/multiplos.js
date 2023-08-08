@@ -13,4 +13,4 @@ const somarMultiplos = (valor) => {
   return soma;
 };
 
-console.log(somarMultiplos(999));
+module.exports = { somarMultiplos };

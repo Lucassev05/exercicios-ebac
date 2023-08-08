@@ -18,6 +18,4 @@ const mdc = (valorA, valorB) => {
   return valorA;
 };
 
-console.log(mdc(30, 78));
-console.log(mdc(2, 20));
-console.log(mdc(1, 0));
+module.exports = { mdc };

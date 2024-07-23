@@ -1,0 +1,35 @@
+// Nas mesmas buscas do exercício anterior, traga apenas o número do resultado usando o contador
+
+// este primeiro exercicio não muda já que ele pede quantidade de livros (ou seja, contagem)
+db.biblioteca
+  .find(
+    {
+      status: {
+        $ne: "PUBLISH"
+      }
+    },
+    { pageCount: { $lt: 300 } }
+  )
+  .count()
+
+
+db.biblioteca
+  .find({
+    $and: [
+      { title: { $regex: /MongoDB/ } },
+      { title: { $regex: /SQL Server/ } }
+    ]
+  })
+  .count()
+
+db.biblioteca
+  .find({
+    isbn: { $regex: /^18/ }
+  })
+  .count()
+
+db.biblioteca
+  .find({
+    longDescription: { $regex: /(JAVA|Mobile)/, $options: "i" }
+  })
+  .count()
